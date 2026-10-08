@@ -1,0 +1,6 @@
+{
+  "name": "RAAH — A Path to Career",
+  "description": "Personalized 4-year career guidance, video learning, coding practice, and AI mentor platform for B.Tech Computer Science students.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

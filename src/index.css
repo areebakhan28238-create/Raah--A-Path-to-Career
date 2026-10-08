@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  /* ==========================================================================
+     RAAH BRAND DESIGN TOKEN SYSTEM
+     Extracted directly from the official RAAH Logo:
+     - Deep Academic Midnight Navy ('R' pillar, mortarboard, typography): #18233C
+     - Midnight Dark foundation: #0E1626
+     - Navy Light hover/active: #26385D
+     - Sunrise Amber/Gold ('R' sun and paper plane): #E89020 / #F59E0B
+     - Warm Ivory Canvas (Logo background tone): #FAF7F2
+     - Crisp Surface cards: #FFFFFF
+     - Warm Ivory border & subtle panels: #E8E2D5 & #F4EFE6
+     - Deep Navy text: #18233C
+     - Balanced Slate text: #5C667E
+     ========================================================================== */
+  --primary: #18233C;
+  --primary-dark: #0E1626;
+  --primary-light: #26385D;
+  --secondary: #E89020;
+  --secondary-light: #FDE8C7;
+  --accent: #F59E0B;
+  --accent-light: #FEF3C7;
+  --background: #FAF7F2;
+  --surface: #FFFFFF;
+  --surface-subtle: #F4EFE6;
+  --text-primary: #18233C;
+  --text-secondary: #5C667E;
+  --text-muted: #8E98AC;
+  --border: #E8E2D5;
+  --border-light: #F1ECE2;
+
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--background);
+    color: var(--text-primary);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    min-height: 100vh;
+  }
+}
+
+/* Custom scrollbar matching RAAH warm palette */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-subtle);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8D0C2;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B8AF9F;
+}
+
+/* Helper utility classes for consistent RAAH design tokens */
+.bg-raah-primary { background-color: var(--primary); }
+.bg-raah-primary-dark { background-color: var(--primary-dark); }
+.bg-raah-primary-light { background-color: var(--primary-light); }
+.bg-raah-secondary { background-color: var(--secondary); }
+.bg-raah-secondary-light { background-color: var(--secondary-light); }
+.bg-raah-accent { background-color: var(--accent); }
+.bg-raah-accent-light { background-color: var(--accent-light); }
+.bg-raah-bg { background-color: var(--background); }
+.bg-raah-surface { background-color: var(--surface); }
+.bg-raah-surface-subtle { background-color: var(--surface-subtle); }
+
+.text-raah-primary { color: var(--primary); }
+.text-raah-primary-dark { color: var(--primary-dark); }
+.text-raah-secondary { color: var(--secondary); }
+.text-raah-accent { color: var(--accent); }
+.text-raah-text-primary { color: var(--text-primary); }
+.text-raah-text-secondary { color: var(--text-secondary); }
+.text-raah-text-muted { color: var(--text-muted); }
+
+.border-raah { border-color: var(--border); }
+.border-raah-light { border-color: var(--border-light); }
+.border-raah-primary { border-color: var(--primary); }
+.border-raah-secondary { border-color: var(--secondary); }
+.border-raah-accent { border-color: var(--accent); }
+
+
+
